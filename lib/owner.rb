@@ -48,7 +48,7 @@ class Owner
        end
      end
    end
- 
+
    def play_with_cats
      @pets.collect do |species, instances|
        if species == :cats
@@ -58,7 +58,7 @@ class Owner
        end
      end
    end
- 
+
    def feed_fish
      @pets.collect do |species, instances|
        if species == :fishes
@@ -68,7 +68,7 @@ class Owner
        end
      end
    end
- 
+
    def sell_pets
      @pets.collect do |species, instances|
        instances.each do |pet|
@@ -77,7 +77,7 @@ class Owner
        instances.clear
      end
    end
- 
+
    def list_pets
      num_dogs = @pets[:dogs].size
      num_cats = @pets[:cats].size
