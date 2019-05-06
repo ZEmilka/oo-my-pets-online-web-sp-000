@@ -12,15 +12,15 @@ class Owner
    end
 
    def self.all
-    @@all
+    @@owners
    end
 
    def self.count
-    @@all.size
+    @@owners.size
    end
 
    def self.reset_all
-    @@all.clear
+    @@owners.clear
    end
 
    def say_species
