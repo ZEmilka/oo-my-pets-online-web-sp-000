@@ -40,34 +40,22 @@ class Owner
   end
 
   def walk_dogs
-     @pets.collect do |species, instances|
-       if species == :dogs
-         instances.each do |dog|
-           dog.mood = "happy"
-         end
-       end
-     end
-   end
+    @pets[:dogs].each do |dog|
+      dog.mood = "happy"
+    end
+  end
 
-   def play_with_cats
-     @pets.collect do |species, instances|
-       if species == :cats
-         instances.each do |cat|
-           cat.mood = "happy"
-         end
-       end
-     end
-   end
+  def play_with_cats
+    @pets[:cats].each do |cat|
+      cat.mood = "happy"
+    end
+  end
 
-   def feed_fish
-     @pets.collect do |species, instances|
-       if species == :fishes
-         instances.each do |fish|
-           fish.mood = "happy"
-         end
-       end
-     end
-   end
+  def feed_fish
+    @pets[:fishes].each do |fish|
+      fish.mood = "happy"
+    end
+  end
 
    def sell_pets
      @pets.collect do |species, instances|
