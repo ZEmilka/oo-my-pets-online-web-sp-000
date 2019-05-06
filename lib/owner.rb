@@ -44,9 +44,9 @@ class Owner
     @@pets[:fishes]<<Fish.new(fish)
   end
 
-  
-    
-    
 
-  
+
+
+
+
 end
